@@ -1,0 +1,100 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/resource_send_back_img"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+            <TextView
+                android:textColor="#ffff"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="发布学习资源"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"/>
+
+            <TextView
+                android:text=""
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#ffff"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <EditText
+        android:paddingLeft="10dp"
+        android:hint="请输入您想发布的资源名称"
+        android:id="@+id/resource_title"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+
+        android:padding="10dp"
+        android:paddingTop="4dp"
+        android:textColor="#89d1ca"
+        android:paddingLeft="10dp"
+        android:hint="请您输入资源的描述和来源"
+        android:id="@+id/resource_edit_show"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_back"
+        android:gravity="top|left"
+        android:lines="10"
+        android:inputType="textMultiLine"
+        android:maxWidth="5.0dip"
+        android:minWidth="10.0dip"
+        android:scrollHorizontally="false"
+        android:textSize="20sp"/>
+
+
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/resource_send_progressbar"
+        android:layout_gravity="center"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+    <Button
+        android:id="@+id/resource_send_btn"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        android:text="发布"
+        android:background="@color/colorAccent"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+</LinearLayout>

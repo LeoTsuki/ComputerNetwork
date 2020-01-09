@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="82dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        app:cardBackgroundColor="#ffff"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/group_avator_item"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/group" />
+
+            <TextView
+                android:id="@+id/group_random_number_item"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/group_class_item"
+                android:gravity="end"
+                android:text=""
+                android:textColor="#b231fc" />
+
+            <TextView
+
+                android:id="@+id/group_class_item"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignStart="@+id/group_name_item"
+                android:layout_alignTop="@+id/group_avator_item"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/group_name_item"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/group_class_item"
+                android:layout_marginStart="15dp"
+                android:layout_toRightOf="@+id/group_avator_item"
+                android:gravity="center_vertical"
+                android:text="加载中......"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/group_owner_name"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/group_name_item"
+                android:layout_marginStart="15dp"
+                android:layout_toRightOf="@+id/group_avator_item"
+                android:gravity="center_vertical"
+                android:text="" />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

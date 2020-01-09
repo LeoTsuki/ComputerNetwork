@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/timg" />
+
+    <EditText
+        android:id="@+id/edit_username_login"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:background="#FFFF"
+        android:hint="请输入您注册的手机号"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" />
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#dadada"
+        android:id="@+id/hint"
+        android:layout_below="@id/edit_username_login"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <EditText
+
+        android:layout_marginRight="20dp"
+        android:id="@+id/edit_password_login"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignStart="@+id/edit_username_login"
+        android:layout_below="@+id/hint"
+        android:background="#ffffff"
+        android:hint="请输入您的密码"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edit_password_login"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="#ffff"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:text="注册账号"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_btn_text"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/login"
+        android:textSize="16sp"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/login"/>
+    <TextView
+        android:layout_marginBottom="35dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="本软件仅用于毕业设计"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

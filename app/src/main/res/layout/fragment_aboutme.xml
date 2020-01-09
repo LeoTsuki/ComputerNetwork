@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f7f9"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:text="我的信息"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/icon_cuit"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/cuit" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center|left"
+            android:maxLines="1"
+            android:text="罗迎风"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/user_major"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_alignStart="@+id/user_name"
+            android:layout_alignParentBottom="true"
+            android:gravity="center|left"
+            android:text="cuit 物联网工程"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/login"
+            android:layout_width="75dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/me_right" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="0dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="55dp"
+
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/user_join_group_count"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#696868"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:gravity="center"
+                android:text="加入的小组数"
+                android:textColor="#000000"
+                android:textSize="22sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e4e3e3" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#e4e3e3" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffff"
+            android:layout_marginTop="150dp">
+
+            <Button
+                android:id="@+id/logout_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginBottom="0dp"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:text="退出当前账号"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

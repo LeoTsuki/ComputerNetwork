@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="创建学习小组"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/create_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:srcCompat="@drawable/group" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#ffff"
+        android:orientation="vertical"
+        android:weightSum="3.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="132dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="小组名称"
+                android:textColor="#000000" />
+
+            <EditText
+                android:textColor="#a7a7a6"
+                android:paddingLeft="15dp"
+                android:id="@+id/group_name_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="#e3e2e2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="课程名称"
+                android:textColor="#000000" />
+
+            <EditText
+                android:textColor="#a7a7a6"
+                android:paddingLeft="15dp"
+                android:id="@+id/group_major_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="#e3e2e2" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:orientation="horizontal">
+
+
+
+            <EditText
+                android:textColor="#a7a7a6"
+                android:paddingLeft="15dp"
+                android:id="@+id/group_longtime_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/create_group_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/avoscloud_blue"
+        android:text="创建"
+        android:textColor="#ffff"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
